@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="vie
+    wport" content="width=device-width, initial-scale=1.0" />
+    <title>Form and HTML Elements</title>
+    <style> 
+      h1{
+        color:  red;
+    font-size: 20px
+    font-family: monospace; 
+    background-color: blue;
+    text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Basic text formatting -->
+     <hr>
+    <p>Hello World</p>
+    color:  red;
+    font-size: 20px
+    font-family: monospace; 
+    background-color: blue;
+  
+    <hr>
+    <b>Hello World</b>
+    <strong>Hello World</strong>
+    <small>Hello World</small>
+    <br />
+    <span>Hello World</span>
+
+    <!-- Headings -->
+    <h1>Hello World</h1>
+    <h2>Hello World</h2>
+    <h3>Hello World</h3>
+    <h4>Hello World</h4>
+    <h5>Hello World</h5>
+    <h6>Hello World</h6>
+
+    <!-- Italic and emphasized text -->
+    <i>Hello World</i><br />
+    <em>Hello World</em><br />
+    <u>Hello World</u>
+    <hr />
+
+
+    <!-- Paragraph with formatting -->
+    <p>
+      Lorem ipsum <b><u>dolor</u></b> sit, amet consectetur adipisicing elit.
+      <mark>Enim tenetur natus vitae nihil hic</mark>, praesentium in aliquid?
+      Non rerum fuga placeat quam neque doloremque magni vel, quis voluptatem,
+      sint sequi!
+    </p>
+
+    <hr />
+
+    <!-- Ordered list -->
+    <ol>
+      <li>Java Programming</li>
+      <li>Python Programming</li>
+      <li>C Programming</li>
+    </ol>
+
+    <!-- Unordered list -->
+    <ul>
+      <li>Java Programming</li>
+      <li>Python Programming</li>
+      <li>C Programming</li>
+    </ul>
+
+    <ul style="list-style-type: square;">
+      <li>Java Programming</li>
+      <li>Python Programming</li>
+      <li>C Programming</li>
+    </ul>
+
+    <hr>
+
+    <!-- Dropdown menu -->
+    <h1>Drop Down Menu</h1>
+<select>
+    <option value="">choose any one</option>
+    <option value="C programing">C programing</option>
+    <option value="C++ programing">C++ programing</option>
+    <option value="java programing">java programing</option>
+    <option value="python programing">python programing</option>
+    <option value=".net programing">.net programing</option>
+    <option value="Ruby programing">Ruby programing</option>
+    <option value="c# programing">C# programing</option>
+
+</select>
+    <br /><br /><br />
+
+
+    <!-- Form -->
+    <form>
+      <h3>WELCOME TO SIET</h3>
+      
+      <label for="name">NAME :</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your Name" /><br /><br />
+
+      <label for="usn">USN :</label>
+      <input type="text" id="usn" name="usn" required placeholder="Enter your Usn"/><br /><br />
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" placeholder="Enter your Email" /><br /><br />
+
+      <label for="phone">Phone :</label>
+      <input type="tel" id="phone" name="phone" required placeholder="Enter your Phone"/><br /><br />
+
+      <label for="password">Password :</label>
+      <input type="password" id="password" name="password" required  placeholder="Password"/><br /><br />
+
+      <label>Gender :</label><br />
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label><br />
+
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br />
+
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label><br /><br />
+
+      <input type="checkbox" id="terms" name="terms" />
+      <label for="terms">I agree to the terms and conditions</label><br /><br />
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <img src="data:image/png;base64,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"alt="img"height="500px"width="500px">
+
+      <hr>
+      <a href="https://www.google.com">For more Information Click here</a>
+      <hr>
+      <from></from>
+    <div class=""xyz" id="REGISTER"></div>
+    <div class=""xyz" id="LOGIN"></div>
+    <h3>REGISTER</h3>
+    <h3>LOGIN</h3>   
+<label gor="name">NAME</label>
+<input type="name"><br><br>
+
+<label gor="password">PASSWORD</label>
+<input type="password"><br><br>
+
+<label gor="email">EMAIL</label>
+<input type="email"><br><br>
+
+<button type="reset">Reset</button><br><br>
+<button type="submit">Submit</button><br> <br>
+<br></label>    </form>
+  </body>
+</html>
